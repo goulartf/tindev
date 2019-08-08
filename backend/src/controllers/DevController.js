@@ -1,5 +1,5 @@
-const axios = require("axios");
-const Dev = require("../models/Dev");
+const axios = require('axios');
+const Dev = require('../models/Dev');
 
 module.exports = {
   async index(req, res) {
@@ -35,5 +35,13 @@ module.exports = {
       avatar
     });
     return res.json(dev);
+  },
+
+  async get(req, res) {
+    const { user } = req.headers;
+
+    const loggedDev = await Dev.findById(user);
+
+    return res.json(loggedDev);
   }
 };
