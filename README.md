@@ -1,4 +1,4 @@
-#PROJETO SEMANA OMINISTACK 8.0
+## PROJETO SEMANA OMINISTACK 8.0
 
 Projeto utilizado para demonstrar a stack NODE, REACT, REACT NATIVE
 
